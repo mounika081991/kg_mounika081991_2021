@@ -25,7 +25,7 @@ for(var i = 0; i < args.length; i++) {
         newStr += phonetic.get(z[i][j]);
         
     }
-    newArr.push(plus5);
+    newArr.push(newStr);
       
 }
 console.log(newArr)
