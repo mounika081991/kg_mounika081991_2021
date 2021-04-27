@@ -41,7 +41,7 @@ let phonetic = new Map([
     [2, 'Two'], [3, 'Three'],[4, 'Four'],[5, 'Five'],
     [6, 'Six'],[7, 'Seven'],[8, 'Eight'],[9, 'Nine']
 ]);
-console.log(phonetic);
+//console.log(phonetic);
 
 //console.log(Object.keys(buildMap));
 //const iterator = map.keys()
@@ -83,4 +83,4 @@ function convertToPhonetic( args){
 //function convertToString(input){
 
 
-  //console.log(splitToDigit(100))
+console.log(newarr)
