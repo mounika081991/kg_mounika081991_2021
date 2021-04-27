@@ -15,17 +15,23 @@ let phonetic = new Map([
 var newArr=[];
 var z= new Array(args.length);
 //console.log(z);
-for(var i = 0; i < args.length; i++) {
-    z[i]= splitToDigit(args[i]);
-    //console.log(z[i]);
-    var newStr = " ";
-    for(var j=0; j< z[i].length; j++){
-      
-       // plus5.push(phonetic.get(z[j]));
-        newStr += phonetic.get(z[i][j]);
-        
+function convertToPhonetic(args){
+    for(var i = 0; i < args.length; i++) {
+        z[i]= splitToDigit(args[i]);
+        //console.log(z[i]);
+        var newStr = " ";
+        for(var j=0; j< z[i].length; j++){
+          
+           // plus5.push(phonetic.get(z[j]));
+            newStr += phonetic.get(z[i][j]);
+            
+        }
+        newArr.push(newStr);
+          
     }
-    newArr.push(newStr);
-      
+    return newArr;
 }
-console.log(newArr)
+var ans = console.log(convertToPhonetic(args));
+console.log(ans);
+//console.log(...newArr);
+//console.log(Array.to(newArr));
