@@ -14,7 +14,7 @@ phonetic(100)*/
 function splitToDigit(n){
     return [...n + ''].map(Number)
   }
-z = splitToDigit(100)
+//z = splitToDigit(100)
 /*var x = [0, 1, 2, 3, 4,5, 6, 7, 8, 9];
 var y = ["Zero", "One", "Two", "Three", "Four","Five", "Six", "Seven", "Eight", "Nine"];
 var result = y.reduce(function(result, field, index){
@@ -23,13 +23,13 @@ var result = y.reduce(function(result, field, index){
 }, {})
 console.log(result);*/
 
-const x = [0, 1, 2, 3, 4,5, 6, 7, 8, 9];
-const y = ["Zero", "One", "Two", "Three", "Four","Five", "Six", "Seven", "Eight", "Nine"];
+//const x = [0, 1, 2, 3, 4,5, 6, 7, 8, 9];
+//const y = ["Zero", "One", "Two", "Three", "Four","Five", "Six", "Seven", "Eight", "Nine"];
 //const buildMap = (x,y) => {
-const map = new Map();
-   for(let i = 0; i < x.length; i++){
-      map.set(x[i], y[i]);
-   };
+//const map = new Map();
+  // for(let i = 0; i < x.length; i++){
+      //ap.set(x[i], y[i]);
+   //};
    //return map;
 //};
 //console.log(buildMap(x,y));
@@ -58,12 +58,13 @@ const iterator2 = map.values()
         console.log(user);
     }
 }
-function convertToPhonetic( arr)
-var arr = [10, 300, 5];
+let args = process.argv.slice(2);
+let args = [...arguments];
+//var arr = [10, 300, 5];
 var newarr= [];
-function convertToPhonetic( arr){
-    for(var i = 0; i < arr.length; i++) {
-        z[i]= splitToDigit(arr[i]);
+function convertToPhonetic( args){
+    for(var i = 0; i < args.length; i++) {
+        z[i]= splitToDigit(args[i]);
         var plus5 = " ";
         for(var j=0; j< z[i].length; j++){
           
