@@ -44,8 +44,8 @@ let phonetic = new Map([
 console.log(phonetic);
 
 //console.log(Object.keys(buildMap));
-const iterator = map.keys()
-const iterator2 = map.values()
+//const iterator = map.keys()
+//const iterator2 = map.values()
 //for (let user of iterator) {
     //console.log(user.next().value;
 //}
@@ -53,13 +53,13 @@ const iterator2 = map.values()
 //let Y= X.map((val, i, X) => {
     //return [X]
   //});
-  for(let user of phonetic.values()){
-    if ( phonetic.get(1)== user){
-        console.log(user);
-    }
-}
+  //for(let user of phonetic.values()){
+    //if ( phonetic.get(1)== user){
+        //console.log(user);
+   // }
+//}
 let args = process.argv.slice(2);
-let args = [...arguments];
+let arg = [...arguments];
 //var arr = [10, 300, 5];
 var newarr= [];
 function convertToPhonetic( args){
@@ -75,6 +75,7 @@ function convertToPhonetic( args){
         newarr.push(plus5);
           
     }
+    return newarr;
 }
 
   // plus5 = [6,7,8,9]  
