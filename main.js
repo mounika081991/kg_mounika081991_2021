@@ -32,9 +32,11 @@ function convertToPhonetic(args){
     return newArr;
 }
 var ans = convertToPhonetic(args);
+var myvar ='';
 for(let i = 0; i< args.length; i++){
-    console.log(ans[i]);
+    myvar = myvar + ' ' + i;
 }
+console.log(myvar);
 //console.log(ans);
 //console.log(...newArr);
 //console.log(Array.to(newArr));
