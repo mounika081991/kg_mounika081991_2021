@@ -12,20 +12,20 @@ let phonetic = new Map([
 ]);
 //console.log(args[0]);
 //console.log(args[1]);
-var newarr=[];
+var newArr=[];
 var z= new Array(args.length);
 //console.log(z);
 for(var i = 0; i < args.length; i++) {
     z[i]= splitToDigit(args[i]);
     //console.log(z[i]);
-    var plus5 = " ";
+    var newStr = " ";
     for(var j=0; j< z[i].length; j++){
       
        // plus5.push(phonetic.get(z[j]));
-        plus5 += phonetic.get(z[i][j]);
+        newStr += phonetic.get(z[i][j]);
         
     }
-    newarr.push(plus5);
+    newArr.push(plus5);
       
 }
-console.log(newarr)
+console.log(newArr)
