@@ -1,7 +1,7 @@
 const args = process.argv.slice(2);
 console.log(args);
 console.log(args.length);
-/*function splitToDigit(n){
+function splitToDigit(n){
     return [...n + ''].map(Number)
   }
 let phonetic = new Map([
@@ -23,4 +23,4 @@ for(var i = 0; i < args.length; i++) {
     newarr.push(plus5);
       
 }
-console.log(newarr)*/
+console.log(newarr)
