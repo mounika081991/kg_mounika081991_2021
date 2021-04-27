@@ -14,7 +14,7 @@ let phonetic = new Map([
 //console.log(args[1]);
 var newarr=[];
 var z= new Array(args.length);
-console.log(z);
+//console.log(z);
 for(var i = 0; i < args.length; i++) {
     z[i]= splitToDigit(args[i]);
     console.log(z[i]);
