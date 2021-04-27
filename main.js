@@ -58,8 +58,10 @@ let phonetic = new Map([
         //console.log(user);
    // }
 //}
-let args = process.argv.slice(2);
-let arg = [...arguments];
+const args = process.argv;
+console.log(args);
+//let args = process.argv.slice(2);
+//let arg = [...arguments];
 //var arr = [10, 300, 5];
 var newarr= [];
 function convertToPhonetic( args){

@@ -17,7 +17,7 @@ var z= new Array(args.length);
 //console.log(z);
 for(var i = 0; i < args.length; i++) {
     z[i]= splitToDigit(args[i]);
-    console.log(z[i]);
+    //console.log(z[i]);
     var plus5 = " ";
     for(var j=0; j< z[i].length; j++){
       
