@@ -11,8 +11,10 @@ let phonetic = new Map([
     [6, 'Six'],[7, 'Seven'],[8, 'Eight'],[9, 'Nine']
 ]);
 console.log(args.length);
+var newarr=[];
+var z= new Array(args.length);
 for(var i = 0; i < args.length; i++) {
-    z[i]= splitToDigit(args[i]);
+    z[i]= new Array(splitToDigit(args[i]));
     var plus5 = " ";
     for(var j=0; j< z[i].length; j++){
       
