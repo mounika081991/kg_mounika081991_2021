@@ -31,7 +31,10 @@ function convertToPhonetic(args){
     }
     return newArr;
 }
-var ans = console.log(convertToPhonetic(args));
+var ans = new Array(console.log(convertToPhonetic(args)));
+for(let i = 0; i< args.length; i++){
+    console.log(ans[i]);
+}
 //console.log(ans);
 //console.log(...newArr);
 //console.log(Array.to(newArr));
