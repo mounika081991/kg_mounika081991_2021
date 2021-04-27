@@ -58,8 +58,14 @@ const iterator2 = map.values()
         console.log(user);
     }
 }
+
+
+var myArgs = process.argv.slice(2);
+console.log('myArgs: ', myArgs);
 function convertToPhonetic( arr)
-var arr = [10, 300, 5];
+let args = Array.from(arguments);
+
+//var arr = [10, 300, 5];
 var newarr= [];
 for(var i = 0; i < arr.length; i++) {
     z[i]= splitToDigit(arr[i]);
