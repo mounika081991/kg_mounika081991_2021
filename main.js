@@ -34,7 +34,7 @@ function convertToPhonetic(args){
 var ans = convertToPhonetic(args);
 var myvar ='';
 for(let i = 0; i< args.length; i++){
-    myvar = myvar + ' ' + i;
+    myvar = myvar + ' ' + ans[i];
 }
 console.log(myvar);
 //console.log(ans);
