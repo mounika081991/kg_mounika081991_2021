@@ -61,18 +61,21 @@ const iterator2 = map.values()
 function convertToPhonetic( arr)
 var arr = [10, 300, 5];
 var newarr= [];
-for(var i = 0; i < arr.length; i++) {
-    z[i]= splitToDigit(arr[i]);
-    var plus5 = " ";
-    for(var j=0; j< z[i].length; j++){
-      
-       // plus5.push(phonetic.get(z[j]));
-        plus5 += phonetic.get(z[i][j]);
-        
+function convertToPhonetic( arr){
+    for(var i = 0; i < arr.length; i++) {
+        z[i]= splitToDigit(arr[i]);
+        var plus5 = " ";
+        for(var j=0; j< z[i].length; j++){
+          
+           // plus5.push(phonetic.get(z[j]));
+            plus5 += phonetic.get(z[i][j]);
+            
+        }
+        newarr.push(plus5);
+          
     }
-    newarr.push(plus5);
-      
 }
+
   // plus5 = [6,7,8,9]  
 //
 //function convertToString(input){
