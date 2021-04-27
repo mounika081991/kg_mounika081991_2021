@@ -59,6 +59,9 @@ const iterator2 = map.values()
     }
 }
 
+var arguments = process.argv ;
+  
+console.log(arguments) ;
 
 var myArgs = process.argv.slice(2);
 console.log('myArgs: ', myArgs);
@@ -67,18 +70,22 @@ let args = Array.from(arguments);
 
 //var arr = [10, 300, 5];
 var newarr= [];
-for(var i = 0; i < arr.length; i++) {
-    z[i]= splitToDigit(arr[i]);
-    var plus5 = " ";
-    for(var j=0; j< z[i].length; j++){
-      
-       // plus5.push(phonetic.get(z[j]));
-        plus5 += phonetic.get(z[i][j]);
-        
+function convertToPhonetic( args){
+    for(let i = 0; i < args.length; i++) {
+        z[i]= splitToDigit(arr[i]);
+        var plus5 = " ";
+        for(let j=0; j< z[i].length; j++){
+          
+           // plus5.push(phonetic.get(z[j]));
+            plus5 += phonetic.get(z[i][j]);
+            
+        }
+        newarr.push(plus5);
+          
     }
-    newarr.push(plus5);
-      
+    return newarr
 }
+
   // plus5 = [6,7,8,9]  
 //
 //function convertToString(input){
