@@ -34,8 +34,13 @@ function convertToPhonetic(args){
 var ans = convertToPhonetic(args);
 var myvar ='';
 for(let i = 0; i< args.length; i++){
-    myvar = myvar + ','  + ans[i];
-}
+    if(i == 0){
+        myvar = myvar + ''  + ans[i]; 
+    }
+    else{
+        myvar = myvar + ','  + ans[i];
+    }
+}   
 console.log(myvar);
 //console.log(ans);
 //console.log(...newArr);
